@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #e4e4e4;
+    padding-top: 100px;
+}
+
+header{
+    display: flex; /*para que os elementos fiquem um ao lado do outro*/
+    align-items: center; /*para que os elementos fiquem centralizados na vertical*/
+    margin-bottom: 40px;
+    justify-content: center;
+} 
+
+header img{
+    height: 50px;
+    margin-right: 16px;
+}
+
+header h1{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.container{
+    max-width: 850px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form{
+    display: flex;
+    max-width: 800px; /*area maxima*/
+    width: 100%;
+    justify-content: space-between; /*para distribuir o espaçamento entre os itens*/
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+
+form input{
+    background-color: #fff;
+    font-size: 20px;
+    border: none; /*remove todas as bordas*/
+    border-bottom: 2px solid #000; /*borda inferior com 2 px na cor preta*/
+    padding: 8px; /*espaçamento*/
+    border-radius: 5px; /*cantos arredondados*/
+}
+
+select{
+    width: 100px;
+    font-size: 1rem;
+    border: none; /*remove todas as bordas*/
+    border-bottom: 2px solid #000; /*borda inferior com 2 px na cor preta*/
+    border-radius: 5px;
+  }
+
+form button{
+    background-color: #6fa6e6; /*fundo do botão*/
+    color: #ffffff; /*cor da fonte*/
+    font-size: 20px; /*tamanho da fonte*/
+    font-weight: bold; /*peso da fonte*/
+    border: none; /*borda dotão botão, removida*/
+    cursor: pointer; /* tipo de cursor - icone (mãozinha)*/
+    padding: 8px; /*espaçamento*/
+    border-radius: 5px; /*cantos arredondados*/
+}
+
+table{
+    width: 100%; /*largura da tabela*/
+}
+
+table th{
+    border-bottom: 2px solid #000;
+    padding: 16px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+table td img{
+    width: 30px;
+}
+
+table td{
+    padding: 16px 0; /*espaçamento na parte superior e inferior, laterais 0*/
+    text-align: center;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.2); /*0.5 = Alfa -> define transparencia*/
+}
+
+.reset{
+    background-color: #6fa6e6; /*fundo do botão*/
+    color: #ffffff; /*cor da fonte*/
+    font-size: 12px; /*tamanho da fonte*/
+    font-weight: bold; /*peso da fonte*/
+    border: none; /*borda dotão botão, removida*/
+    cursor: pointer; /* tipo de cursor - icone (mãozinha)*/
+    padding: 8px; /*espaçamento*/
+    border-radius: 5px; /*cantos arredondados*/
+    margin-top: 30px;
+    margin-left: auto;
+    display: block;
+}
+

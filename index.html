@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda EBAC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+<div class="container">
+    <header> <!--Cabeçalho-->
+        <img src="./imagens/logo.png" alt="telfone">
+        <h1>Agenda de contatos</h1>
+    </header>
+    <form id="form-agenda"> <!--Formulario-->
+        <input type="text" id="nome-cadastro" required placeholder="Nome" />
+        <input type="tel" id="telefone" required placeholder="Numero" />
+        <select name="" id="tipo">
+            <option value="Celular">Celular</option>
+            <option value="Residecial">Residencial</option>
+        </select>
+        <button type="submit">Cadastrar +</button>
+        
+    </form>
+    <table cellspacing="0"> <!--Tabela + propriedade para retirar o espaçamento-->
+        <thead> <!--cabeçalho da tabela-->
+            <tr> <!--linha-->
+                <th> <!--table header = colunas / etiquetas-->
+                    Nome cadastrado
+                </th>
+                <th>
+                    Numero cadastrado
+                </th>
+                <th class="tipo">Tipo</th>
+            </tr>
+        </thead>
+        <tbody> <!--Conteúdo da tabela-->
+        </tbody>
+        <tfoot> <!--Rodapé da tabela-->
+            <tr>
+                <td>Total de contatos</td> <!-- table data = célula-->
+                <td id="total">---</td>
+                <td></td>
+                
+            </tr>
+        </tfoot>
+    </table>
+    <button class="reset" onClick="window.location.reload()">Limpar Agenda</button>
+</div>
+<script src="./main.js"></script>
+</html>
