@@ -21,7 +21,7 @@ function adicionaLinha() {
     const inputTipo = document.getElementById("tipo");
 
     if (numero.includes(inputTelefoneCadastrado.value)) {
-        alert(`O Nome ${inputTelefoneCadastrado.value} já foi cadastrado`);
+        alert(`O numero ${inputTelefoneCadastrado.value} já foi cadastrado`);
     } else {
         nome.push(inputNomeCadastrado.value);
         numero.push(inputTelefoneCadastrado.value);
@@ -36,9 +36,9 @@ function adicionaLinha() {
         linhas += linha;
     }
 
-    inputNomeCadastrado.value = "";
-    inputTelefoneCadastrado.value = "";
-    inputTipo.value = "";
+    inputNomeCadastrado.value ="";
+    inputTelefoneCadastrado.value ="";
+    inputTipo.value ="Tipo";
 }
 
 function atualizaTabela() {
